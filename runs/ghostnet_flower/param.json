@@ -1,0 +1,43 @@
+{
+    "model_name","ghostnet":
+    "pretrained","True":
+    "weight","":
+    "config","config/config.py":
+    "train_path","dataset/train":
+    "val_path","dataset/val":
+    "test_path","dataset/test":
+    "label_path","dataset/label.txt":
+    "image_size","224":
+    "image_channel","3":
+    "workers","4":
+    "batch_size","64":
+    "epoch","100":
+    "save_path","runs/ghostnet_flower":
+    "resume","False":
+    "loss","CrossEntropyLoss":
+    "optimizer","AdamW":
+    "lr","0.0001":
+    "label_smoothing","0.1":
+    "class_balance","False":
+    "weight_decay","0.0005":
+    "momentum","0.9":
+    "amp","True":
+    "warmup","True":
+    "warmup_ratios","0.05":
+    "warmup_minlr","1e-06":
+    "metrice","acc":
+    "patience","30":
+    "imagenet_meanstd","True":
+    "mixup","none":
+    "Augment","AutoAugment":
+    "test_tta","False":
+    "kd","False":
+    "kd_ratio","0.7":
+    "kd_method","SoftTarget":
+    "teacher_path","":
+    "custom_augment","Compose()":
+    "lr_scheduler","<class 'torch.optim.lr_scheduler.CosineAnnealingLR'>":
+    "lr_scheduler_params","{'T_max': 10, 'eta_min': 1e-06}":
+    "plot_train_batch_count","5":
+    "random_seed","0"
+}
